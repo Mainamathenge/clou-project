@@ -17,7 +17,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/Users/mac/.sdkman/candidates/java/8.0.472-amzn/jre/lib"/>
-    <property name="sun.java.command" value="/Users/mac/Documents/cmu/spring26/dsa/cloud/clou-project/target/surefire/surefirebooter4842752185416247002.jar /Users/mac/Documents/cmu/spring26/dsa/cloud/clou-project/target/surefire 2026-01-18T16-08-13_346-jvmRun1 surefire3149956950500175105tmp surefire_08794868253980019041tmp"/>
+    <property name="sun.java.command" value="/Users/mac/Documents/cmu/spring26/dsa/cloud/clou-project/target/surefire/surefirebooter6129436070573587876.jar /Users/mac/Documents/cmu/spring26/dsa/cloud/clou-project/target/surefire 2026-01-18T16-22-31_988-jvmRun1 surefire777923918132422439tmp surefire_08846822878140015623tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="surefire.test.class.path" value="/Users/mac/Documents/cmu/spring26/dsa/cloud/clou-project/target/test-classes:/Users/mac/Documents/cmu/spring26/dsa/cloud/clou-project/target/classes:/Users/mac/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.2.0/junit-jupiter-engine-5.2.0.jar:/Users/mac/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/Users/mac/.m2/repository/org/junit/platform/junit-platform-engine/1.2.0/junit-platform-engine-1.2.0.jar:/Users/mac/.m2/repository/org/junit/platform/junit-platform-commons/1.2.0/junit-platform-commons-1.2.0.jar:/Users/mac/.m2/repository/org/opentest4j/opentest4j/1.1.0/opentest4j-1.1.0.jar:/Users/mac/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.2.0/junit-jupiter-api-5.2.0.jar:/Users/mac/.m2/repository/org/hamcrest/hamcrest-all/1.3/hamcrest-all-1.3.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -31,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/Users/mac/Documents/cmu/spring26/dsa/cloud/clou-project/target/surefire/surefirebooter4842752185416247002.jar:/Users/mac/.m2/repository/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar"/>
+    <property name="surefire.real.class.path" value="/Users/mac/Documents/cmu/spring26/dsa/cloud/clou-project/target/surefire/surefirebooter6129436070573587876.jar:/Users/mac/.m2/repository/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar"/>
     <property name="sun.boot.class.path" value="/Users/mac/.sdkman/candidates/java/8.0.472-amzn/jre/lib/resources.jar:/Users/mac/.sdkman/candidates/java/8.0.472-amzn/jre/lib/rt.jar:/Users/mac/.sdkman/candidates/java/8.0.472-amzn/jre/lib/sunrsasign.jar:/Users/mac/.sdkman/candidates/java/8.0.472-amzn/jre/lib/jsse.jar:/Users/mac/.sdkman/candidates/java/8.0.472-amzn/jre/lib/jce.jar:/Users/mac/.sdkman/candidates/java/8.0.472-amzn/jre/lib/charsets.jar:/Users/mac/.sdkman/candidates/java/8.0.472-amzn/jre/lib/jfr.jar:/Users/mac/.sdkman/candidates/java/8.0.472-amzn/jre/classes"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
@@ -62,13 +62,13 @@
     <property name="java.class.version" value="52.0"/>
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="checkDataLength" classname="edu.cmu.scs.cc.DataFilterTest" time="0.005"/>
-  <testcase name="sortRecords" classname="edu.cmu.scs.cc.DataFilterTest" time="0.004"/>
+  <testcase name="checkDataLength" classname="edu.cmu.scs.cc.DataFilterTest" time="0.006"/>
+  <testcase name="sortRecords" classname="edu.cmu.scs.cc.DataFilterTest" time="0.003"/>
   <testcase name="checkAllRules" classname="edu.cmu.scs.cc.DataFilterTest" time="0"/>
   <testcase name="checkDomain" classname="edu.cmu.scs.cc.DataFilterTest" time="0"/>
   <testcase name="checkPrefix" classname="edu.cmu.scs.cc.DataFilterTest" time="0.001"/>
   <testcase name="checkSuffix" classname="edu.cmu.scs.cc.DataFilterTest" time="0.001"/>
   <testcase name="checkFirstLetter" classname="edu.cmu.scs.cc.DataFilterTest" time="0"/>
-  <testcase name="getColumns" classname="edu.cmu.scs.cc.DataFilterTest" time="0"/>
+  <testcase name="getColumns" classname="edu.cmu.scs.cc.DataFilterTest" time="0.001"/>
   <testcase name="checkSpecialPage" classname="edu.cmu.scs.cc.DataFilterTest" time="0"/>
 </testsuite>
