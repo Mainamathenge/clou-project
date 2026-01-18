@@ -189,7 +189,7 @@ public final class DataFilter {
      * @return true if length == 4
      */
     static boolean checkDataLength(final String[] columns) {
-        throw new RuntimeException("To be implemented");
+        return columns.length == CLEAN_DATA_LENGTH;
     }
 
     /**
@@ -199,7 +199,7 @@ public final class DataFilter {
      * @return true if the domain code is en or en.m
      */
     static boolean checkDomain(final String[] columns) {
-        throw new RuntimeException("To be implemented");
+        return columns[DOMAIN].equals("en") || columns[DOMAIN].equals("en.m");
     }
 
     /**
@@ -209,7 +209,13 @@ public final class DataFilter {
      * @return false if it is a special page
      */
     static boolean checkSpecialPage(final String[] columns) {
-        throw new RuntimeException("To be implemented");
+        String title = columns[TITLE];
+        for (String page : SPECIAL_PAGES) {
+            if (title.equals(page)) {
+                return false;
+            }
+        }
+        return true;
     }
 
     /**
@@ -222,7 +228,13 @@ public final class DataFilter {
      * @return false if the title starts with any blacklisted prefix
      */
     static boolean checkPrefix(final String[] columns) {
-        throw new RuntimeException("To be implemented");
+        String title = columns[TITLE].toLowerCase();
+        for (String prefix : PREFIX_BLACKLIST) {
+            if (title.startsWith(prefix)) {
+                return false;
+            }
+        }
+        return true;
     }
 
     /**
@@ -232,7 +244,13 @@ public final class DataFilter {
      * @return false if the title ends with any blacklisted suffix
      */
     static boolean checkSuffix(final String[] columns) {
-        throw new RuntimeException("To be implemented");
+        String title = columns[TITLE].toLowerCase();
+        for (String suffix : SUFFIX_BLACKLIST) {
+            if (title.endsWith(suffix)) {
+                return false;
+            }
+        }
+        return true;
     }
 
     /**
@@ -248,6 +266,11 @@ public final class DataFilter {
      * @return false if the title starts with [a-z]
      */
     static boolean checkFirstLetter(final String[] columns) {
-        throw new RuntimeException("To be implemented");
+        String title = columns[TITLE];
+        if (title.isEmpty()) {
+            return true;
+        }
+        char c = title.charAt(0);
+        return !(c >= 'a' && c <= 'z');
     }
 }

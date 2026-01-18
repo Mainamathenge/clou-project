@@ -110,16 +110,41 @@ class DataFilterTest {
 
     @Test
     void checkSuffix() {
-        throw new RuntimeException("add test cases on your own");
+        assertTrue(DataFilter.checkSuffix(
+                DataFilter.getColumns("en Carnegie_Mellon_University 34 0")));
+        assertFalse(DataFilter.checkSuffix(
+                DataFilter.getColumns("en Example.jpg 34 0")));
+        assertFalse(DataFilter.checkSuffix(
+                DataFilter.getColumns("en Example.PNG 34 0")));
+        assertFalse(DataFilter.checkSuffix(
+                DataFilter.getColumns("en Apple_(disambiguation) 34 0")));
     }
 
     @Test
     void checkFirstLetter() {
-        throw new RuntimeException("add test cases on your own");
+        assertTrue(DataFilter.checkFirstLetter(
+                DataFilter.getColumns("en Carnegie_Mellon_University 34 0")));
+        assertFalse(DataFilter.checkFirstLetter(
+                DataFilter.getColumns("en carnegie_mellon_university 34 0")));
+        assertTrue(DataFilter.checkFirstLetter(
+                DataFilter.getColumns("en 123University 34 0")));
+        assertTrue(DataFilter.checkFirstLetter(
+                DataFilter.getColumns("en _Hidden_Page 34 0")));
     }
 
     @Test
     void checkAllRules() {
-        throw new RuntimeException("add test cases on your own");
+        assertTrue(DataFilter.checkAllRules(
+                DataFilter.getColumns("en Carnegie_Mellon_University 34 0")));
+        assertFalse(DataFilter.checkAllRules(
+                DataFilter.getColumns("fr Carnegie_Mellon_University 34 0")));
+        assertFalse(DataFilter.checkAllRules(
+                DataFilter.getColumns("en Main_Page 34 0")));
+        assertFalse(DataFilter.checkAllRules(
+                DataFilter.getColumns("en User:Example 34 0")));
+        assertFalse(DataFilter.checkAllRules(
+                DataFilter.getColumns("en Example.jpg 34 0")));
+        assertFalse(DataFilter.checkAllRules(
+                DataFilter.getColumns("en carnegie_mellon_university 34 0")));
     }
 }
